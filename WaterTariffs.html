@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Water Tariff Calculator</title>
+  </head>
+
+  <body>
+    <h1>Water Tariff Calculator</h1>
+
+    <label for="waterUsage">Enter water usage (litres):</label>
+
+    <input id="waterUsage" type="number" />
+
+    <br />
+
+    <label for="householdType">Select household type:</label>
+
+    <select id="householdType">
+      <option value="regular">Regular</option>
+
+      <option value="indigent">Indigent</option>
+    </select>
+
+    <button onclick="calculateBill()">Calculate Bill</button>
+
+    <div id="result"></div>
+
+    <script src="waterTariffs.js"></script>
+  </body>
+</html>
